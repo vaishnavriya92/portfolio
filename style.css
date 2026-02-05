@@ -1,0 +1,175 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?fm=jpg&q=60&w=3000");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #1f2933;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    color: #fff;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+/* HOME */
+.home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0 10%;
+    padding-top: 120px;
+
+    animation: fadeIn 1.2s ease;
+}
+
+.home h1 {
+    font-size: 40px;
+}
+
+.home span {
+    color: #60a5fa;
+}
+
+.home h3 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.home p {
+    max-width: 600px;
+    margin-top: 10px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 80px 10%;
+    background: #f9fafb;
+    scroll-margin-top: 90px;
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #1f2933;
+}
+
+.section p {
+    margin-top: 10px;
+    max-width: 1000px;
+    font-size: 18px;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills span {
+    background-color: #2563eb;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+.skills span:hover{
+    transform: scale(1.1);
+}
+
+/* PROJECTS */
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform .3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* CONTACT */
+#contact p {
+    margin-bottom: 10px;
+}
+#contact a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #1f2933;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    .section {
+        padding: 70px 6%;
+    }
+}
